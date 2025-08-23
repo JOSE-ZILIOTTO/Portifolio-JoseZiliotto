@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | José Junior Ziliotto</title>
+  <meta name="description" content="Portfólio moderno — projetos e sobre mim." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: { DEFAULT: '#8257e6', light: '#996dff', dark: '#633bbc' }
+          },
+          boxShadow: { glow: '0 0 0 2px rgba(153,109,255,.25), 0 10px 30px -10px rgba(130,87,230,.45)' },
+          backgroundImage: { 'grid': 'linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px)' }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>:root { color-scheme: light dark; }</style>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand/30 selection:text-white">
+  <div aria-hidden class="fixed inset-0 -z-10 opacity-30">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(130,87,230,.15),transparent_60%)]"></div>
+    <div class="absolute inset-0 bg-grid bg-[size:24px_24px]"></div>
+  </div>
+
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60 border-b border-white/5">
+    <nav class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="inline-flex items-center gap-2 font-semibold">
+        <span class="h-8 w-8 grid place-items-center rounded-lg bg-brand/20 text-brand"><i data-lucide="rocket"></i></span>
+        <span>José Junior Ziliotto</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#projetos" class="hover:text-white">Projetos</a>
+        <a href="#sobre" class="hover:text-white">Sobre</a>
+        <button id="themeToggle" class="rounded-xl border border-white/10 p-2 hover:border-brand/50" aria-label="Alternar tema"><i data-lucide="moon"></i></button>
+      </div>
+      <button id="menuBtn" class="md:hidden rounded-xl border border-white/10 p-2" aria-label="Abrir menu"><i data-lucide="menu"></i></button>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/5 bg-slate-950/90">
+      <div class="mx-auto max-w-6xl px-4 py-3 grid gap-3 text-slate-300">
+        <a href="#projetos" class="hover:text-white">Projetos</a>
+        <a href="#sobre" class="hover:text-white">Sobre</a>
+        <button id="themeToggleMobile" class="text-left hover:text-white">Alternar tema</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="mx-auto max-w-6xl px-4 pt-16 pb-10">
+    <div class="grid md:grid-cols-[1.1fr_.9fr] items-center gap-10">
+      <div>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight">
+          Transformo ideias em <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand via-brand-light to-white">produtos digitais</span> de impacto.
+        </h1>
+        <p class="mt-4 text-slate-300 max-w-xl">Desenvolvedor com 1 ano de experiência, focado em qualidade, performance e experiência do usuário.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#projetos" class="inline-flex items-center gap-2 rounded-2xl bg-brand px-5 py-3 font-medium shadow-glow hover:bg-brand-dark transition"><i data-lucide="sparkles"></i> Ver projetos</a>
+          <div class="inline-flex items-center gap-3 text-slate-400">
+            <a aria-label="GitHub" href="https://github.com/JOSE-ZILIOTTO" target="_blank" class="hover:text-white"><i data-lucide="github"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/josé-junior-ziliotto-2a36b7319" target="_blank" class="hover:text-white"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="mx-auto max-w-6xl px-4 py-14">
+    <h2 class="text-2xl sm:text-3xl font-bold">Projetos</h2>
+    <div class="mt-8 grid sm:grid-cols-2 gap-6">
+      <article class="group rounded-2xl border border-white/10 bg-slate-900/60 overflow-hidden hover:border-brand/40 transition">
+        <img src="c:\Users\johse\Downloads\Portifolio\Captura de tela 2025-08-23 121921.png" alt="Preview do Sistema PDV" class="aspect-video object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold">Sistema PDV</h3>
+          <p class="mt-1 text-sm text-slate-400">Layout moderno, controle de caixa e NFC-e.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+            <span class="rounded-full border border-white/10 px-2 py-1">Delphi</span>
+            <span class="rounded-full border border-white/10 px-2 py-1">SQLite</span>
+            <span class="rounded-full border border-white/10 px-2 py-1">FireDAC</span>
+          </div>
+          <div class="mt-4 flex items-center gap-3 text-sm">
+            <a href="https://github.com/JOSE-ZILIOTTO/Sistema_PDV" target="_blank" class="inline-flex items-center gap-1 hover:text-brand"><i data-lucide="github"></i> Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="group rounded-2xl border border-white/10 bg-slate-900/60 overflow-hidden hover:border-brand/40 transition">
+        <img src="C:\Users\johse\Downloads\Portifolio\Captura de tela 2025-08-23 122035.png" alt="Preview do Sistema Financeiro" class="aspect-video object-cover" />
+        <div class="p-5">
+          <h3 class="font-semibold">Sistema Financeiro</h3>
+          <p class="mt-1 text-sm text-slate-400">Gestão de faturas, caixa e relatórios simples.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+            <span class="rounded-full border border-white/10 px-2 py-1">Delphi</span>
+            <span class="rounded-full border border-white/10 px-2 py-1">SQLite</span>
+          </div>
+          <div class="mt-4 flex items-center gap-3 text-sm">
+            <a href="https://github.com/JOSE-ZILIOTTO/Sistema_Financeiro" target="_blank" class="inline-flex items-center gap-1 hover:text-brand"><i data-lucide="github"></i> Código</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="sobre" class="mx-auto max-w-6xl px-4 py-14">
+    <h2 class="text-2xl sm:text-3xl font-bold">Sobre mim</h2>
+    <p class="mt-3 text-slate-300">Sou desenvolvedor com 1 ano de experiência, dedicado a entregar soluções limpas e eficientes. Meus principais projetos acadêmicos foram o Sistema PDV e o Sistema Financeiro.</p>
+    <ul class="mt-4 space-y-2 text-slate-300">
+      <li class="flex gap-2"><i data-lucide="chevron-right" class="mt-1 shrink-0"></i> Graduação em ADS • 2025</li>
+      <li class="flex gap-2"><i data-lucide="chevron-right" class="mt-1 shrink-0"></i> Experiência em Sistemas ERP, PDV, Financeiro</li>
+    </ul>
+  </section>
+
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-400 text-sm">
+      <p>© <span id="year"></span> José Junior Ziliotto. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { lucide.createIcons(); });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const THEME_KEY = 'theme';
+    function applyTheme(t){ if(t === 'light'){ root.classList.remove('dark'); } else { root.classList.add('dark'); } }
+    const saved = localStorage.getItem(THEME_KEY) || 'dark';
+    applyTheme(saved);
+    function toggleTheme(){ const next = root.classList.contains('dark') ? 'light' : 'dark'; localStorage.setItem(THEME_KEY, next); applyTheme(next); }
+    document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+    document.getElementById('themeToggleMobile').addEventListener('click', toggleTheme);
+    document.getElementById('menuBtn').addEventListener('click', () => document.getElementById('mobileMenu').classList.toggle('hidden'));
+  </script>
+</body>
+</html>
